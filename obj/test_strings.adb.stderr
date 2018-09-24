@@ -1,0 +1,1 @@
+test_strings.adb:9:07: warning: variable "Str" is read but never assigned

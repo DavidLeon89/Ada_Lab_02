@@ -1,0 +1,49 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -gnat12
+A -g
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U strings%b		strings.adb		25584210 NE OO PK
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U strings%s		strings.ads		ec2ce475 EE NE OO PK
+
+D strings.ads		20180920114036 ec2ce475 strings%s
+D strings.adb		20180920114036 c974a665 strings%b
+D system.ads		20180524051738 32a08138 system%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+X 1 strings.ads
+7K9*Strings 34E9 39l5 39e12 2|2b14 43l5 43t12
+8R9*T_String 8d19 10r38 11r38 12r31 15r12 16r12 19r15 26r15 34c9 37e14 2|4r34
+. 9r33 14r30 20r12 21r12 28r15 36r15
+8i19 Max{positive} 34r19 35r29
+10U14*Clear 10=25 2|4b14 7l8 7t13
+10r25 Str{8R9} 2|4b21
+11U14*Init 11=25 11>48 2|9b14 12l8 12t12
+11r25 Str{8R9} 2|9b20
+11a48 Value{string} 2|9b43
+12V14*To_String{string} 12>25 2|14b13 17l8 17t17
+12r25 Str{8R9} 2|14b24
+14V13*Are_Equal{boolean} 15>7 16>7 2|19b13 25l8 25t17
+15r7 S1{8R9} 2|20b7
+16r7 S2{8R9} 2|21b7
+18V13*Search{natural} 19>7 20>7 2|27b13 33l8 33t14
+19r7 Str{8R9} 2|28b7
+20e7 Value{character} 2|29b7
+25V13*Search{natural} 26>7 27>7 2|35b13 41l8 41t14
+26r7 Str{8R9} 2|36b7
+27a7 Value{string} 2|37b7
+35a7*Buffer{string}
+36i7*Length{natural}
+

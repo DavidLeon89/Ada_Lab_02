@@ -1,0 +1,12 @@
+En este proyecto tienes tres paquetes Ada incompletos (con sus
+tests unitarios, tambien incompletos) que puedes utilizar para
+continuar familarizandote con Ada durante esta segunda semana.
+
+  - strings.ads, strings.adb, test_strings.adb
+
+  - tables.ads, tables.adb, test_tables.adb
+
+  - stacks.ads, stacks.adb, test_stacks.adb
+
+El fichero run_all_tests.adb contiene un procedimiento que
+se encarga de ejecutar todos los tests.
