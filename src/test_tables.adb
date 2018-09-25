@@ -32,7 +32,13 @@ procedure Test_Tables is
       Msg   : constant String := "Test_3: Binary_Search";
       Table : T_Table (1 .. 5) := (1, 2, 3, 4, 5);
    begin
+      Assert_True (Binary_Search (Table, 1) = 1, Msg);
+      Assert_True (Binary_Search (Table, 2) = 2, Msg);
+      Assert_True (Binary_Search (Table, 3) = 3, Msg);
+      Assert_True (Binary_Search (Table, 4) = 4, Msg);
       Assert_True (Binary_Search (Table, 5) = 5, Msg);
+      Assert_True (Binary_Search (Table, 0) = -1, Msg);
+      Assert_True (Binary_Search (Table, 6) = -1, Msg);
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");

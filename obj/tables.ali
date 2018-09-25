@@ -1,0 +1,87 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -gnat12
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U tables%b		tables.adb		a210301c NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U tables%s		tables.ads		66ff3c7f EE NE OO PK
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D tables.ads		20180920114038 66ff3c7f tables%s
+D tables.adb		20180925195504 4cf2bf39 tables%b
+X 1 ada.ads
+16K9*Ada 20e8 24|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 24|1w10 1r27
+X 23 tables.ads
+9K9*Tables 57l5 57e11 24|2b14 86l5 86t11
+11A9*T_Table(integer)<integer> 13r30 17r15 23r15 34r22 39r42 42r45 45r45
+. 48r41 51r41 54r41 24|4r30 10r15 21r15 49r22 56r42 61r45 66r45 71r41 76r41
+. 81r41
+13V13*Minimum{integer} 13>22 24|4b13 7l8 7t15
+13a22 Table{11A9} 24|4b22 6r14
+16V13*Linear_Search{integer} 17>7 17>24 24|9b13 18l8 18t21
+17a7 Table{11A9} 24|10b7 12r16 13r21 17r14
+17i24 Value{integer} 24|10b24 13r13
+22V13*Binary_Search{integer} 23>7 23>24 24|20b13 33s17 35s17 39l8 39t21
+23a7 Table{11A9} 24|21b7 22r27 22r40 27r18 27r24 27r48 27r54 32r18 33r31
+. 33r37 34r21 35r31 35r38 35r57 37r17
+23i24 Value{integer} 24|21b24 27r10 27r40 32r10 33r59 34r13 35r70
+28U14*Swap 29=7 30=7 24|41b14 46l8 46t12
+29i7 A{integer} 24|42b7
+30i7 B{integer} 24|43b7
+33U14*Swap 34=7 35>7 36>7 24|48b14 54l8 54t12
+34a7 Table{11A9} 24|49b7
+35i7 Pos_1{natural} 24|50b7
+36i7 Pos_2{natural} 24|51b7
+39U14*Bubble_Sort 39=27 24|56b14 59l8 59t19
+39a27 Table{11A9} 24|56b27
+42U14*Selection_Sort 42=30 24|61b14 64l8 64t22
+42a30 Table{11A9} 24|61b30
+45U14*Insertion_Sort 45=30 24|66b14 69l8 69t22
+45a30 Table{11A9} 24|66b30
+48U14*Shell_Sort 48=26 24|71b14 74l8 74t18
+48a26 Table{11A9} 24|71b26
+51U14*Merge_Sort 51=26 24|76b14 79l8 79t18
+51a26 Table{11A9} 24|76b26
+54U14*Quick_Sort 54=26 24|81b14 84l8 84t18
+54a26 Table{11A9} 24|81b26
+X 24 tables.adb
+12i11 n{integer} 13r27 14r20
+22i7 medio{integer} 32r24 33r50 34r27 35r44 37r23
+

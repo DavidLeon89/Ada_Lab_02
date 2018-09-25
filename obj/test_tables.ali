@@ -1,0 +1,75 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -gnat12
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U test_tables%b		test_tables.adb		7050075d NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W assertions%s		assertions.adb		assertions.ali
+W tables%s		tables.adb		tables.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D assertions.ads	20180920114038 0573aace assertions%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D tables.ads		20180920114038 66ff3c7f tables%s
+D test_tables.adb	20180925195610 9bc122b6 test_tables%b
+X 1 ada.ads
+16K9*Ada 20e8 25|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 25|1w10 1r27
+263U14*Put_Line 25|14s10 16s10 26s10 28s10 44s10 46s10 50s4
+X 8 assertions.ads
+1K9*Assertions 15e15 25|2w6 2r23
+2X4*Assertion_Error 25|13r12 25r12 43r12
+10U14*Assert_True 25|11s7 23s7 35s7 36s7 37s7 38s7 39s7 40s7 41s7
+X 24 tables.ads
+9K9*Tables 57e11 25|3w6 3r23
+11A9*T_Table(integer)<integer> 25|9r15 21r15 33r15
+13V13*Minimum{integer} 25|11s20
+16V13*Linear_Search{integer} 25|23s20
+22V13*Binary_Search{integer} 25|35s20 36s20 37s20 38s20 39s20 40s20 41s20
+X 25 test_tables.adb
+5U11*Test_Tables 5b11 54l5 54t16
+7U14 Test_1 7b14 17l8 17t14 51s4
+8a7 Msg{string} 11r41 14r20 16r20
+9a7 Table{24|11A9} 11r29
+19U14 Test_2 19b14 29l8 29t14 52s4
+20a7 Msg{string} 23r50 26r20 28r20
+21a7 Table{24|11A9} 23r35
+31U14 Test_3 31b14 47l8 47t14 53s4
+32a7 Msg{string} 35r50 36r50 37r50 38r50 39r50 40r51 41r51 44r20 46r20
+33a7 Table{24|11A9} 35r35 36r35 37r35 38r35 39r35 40r35 41r35
+
